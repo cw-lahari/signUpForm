@@ -1,0 +1,27 @@
+body{
+    margin:25px;
+    /* background-color: whitesmoke; */
+    border: 1px solid grey;
+    height:95vh
+}
+.heading{
+    text-align:center;
+    padding-top: 30px;
+}
+label{
+    color: grey;
+}
+.error-input-color{
+    border: 2px solid red;
+}
+.success-input-color{
+    border: 2px solid lightgreen;
+}
+body{
+    padding:35px;
+}
+.icon{
+    float:right;
+    margin-top:-25px;
+    margin-right:10px;
+}
