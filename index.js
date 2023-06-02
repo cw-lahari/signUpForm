@@ -1,3 +1,6 @@
+
+
+
 let userNameEl = document.getElementById('userName')
 let emailEl = document.getElementById("Email")
 let passwordEl = document.getElementById("password")
@@ -24,7 +27,7 @@ userNameEl.addEventListener("blur",function(){
 })
 
 emailEl.addEventListener("blur",function(){
-    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com') || (emailEl.value).includes('@outlook.com') ) ){
+    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com')  || (emailEl.value).includes('@hotmail.com') || (emailEl.value).includes('@bike.com') || (emailEl.value).includes('@outlook.com') ) ){
         let emailErrorText = '';
         let emailErrorMsgEl = document.getElementById('emailErrorMsg');
         emailErrorMsgEl.textContent = emailErrorText;
@@ -70,7 +73,7 @@ passwordEl.addEventListener("blur",function(){
     }
     else{
         let passwordErrorMsgEl = document.getElementById('passwordErrorMsg');
-        let passwordErrorText = "Password must has atleast 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special charactyer in (!@#$%^&*)";
+        let passwordErrorText = "Password must has atleast 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)";
         passwordErrorMsgEl.innerHTML = passwordErrorText;
         passwordErrorMsgEl.style.color = "red";
         passwordEl.classList.add("error-input-color");
@@ -137,7 +140,7 @@ buttonEl.addEventListener('click',function(e){
         var userValidation = true;
     }
 
-    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com') || (emailEl.value).includes('@outlook.com') ) ){
+    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com') || (emailEl.value).includes('@outlook.com') || (emailEl.value).includes('@bikewale.com') || (emailEl.value).includes('@hotmail.com') ) && (emailEl.value).length>=10 ){
         let emailErrorText = '';
         let emailErrorMsgEl = document.getElementById('emailErrorMsg');
         emailErrorMsgEl.textContent = emailErrorText;
@@ -184,7 +187,7 @@ buttonEl.addEventListener('click',function(e){
     }
     else{
         let passwordErrorMsgEl = document.getElementById('passwordErrorMsg');
-        let passwordErrorText = "Password must has atleast 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special charactyer in (!@#$%^&*)";
+        let passwordErrorText = "Password must has atleast 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)";
         passwordErrorMsgEl.innerHTML = passwordErrorText;
         passwordErrorMsgEl.style.color = "red";
         passwordEl.classList.add("error-input-color");
@@ -214,3 +217,4 @@ buttonEl.addEventListener('click',function(e){
         alert('Successfully Signed up!!');
     }
 })
+
