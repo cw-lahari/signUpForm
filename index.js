@@ -27,7 +27,7 @@ userNameEl.addEventListener("blur",function(){
 })
 
 emailEl.addEventListener("blur",function(){
-    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com')  || (emailEl.value).includes('@hotmail.com') || (emailEl.value).includes('@bike.com') || (emailEl.value).includes('@outlook.com') ) ){
+    if((emailEl.value) !== "" && ( (emailEl.value).includes('@gmail.com') || (emailEl.value).includes('@cartrade.com') || (emailEl.value).includes('@carwale.com') || (emailEl.value).includes('@outlook.com') || (emailEl.value).includes('@bikewale.com') || (emailEl.value).includes('@hotmail.com') ) && (emailEl.value).length>=10 ){
         let emailErrorText = '';
         let emailErrorMsgEl = document.getElementById('emailErrorMsg');
         emailErrorMsgEl.textContent = emailErrorText;
